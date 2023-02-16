@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Register</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .sr{
+                padding: 10px 500px;   
+            }
+            input[type=text], input[type=password], input[type=email], textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 3px 0 22px 0;
+            display: inline-block;
+            border: ridge;
+            background: #f1f1f1;
+}
+            input[type=text]:focus, input[type=password]:focus {
+              background-color: orange;
+              outline: none;
+}
+        </style>
+    </head>
+    <body style="background-image: url('loginbg1.jpg');width: 100% ;">
+    <center>
+            <form action="stdata.php" method="post"> 
+                <div class="sr">
+                    <!--for giving colours to the text i used p tag insted of label tag-->
+                    <p>Firstname</p> 
+        
+        <input type="text" name="firstname" placeholder="fisrtname" /> 
+         <p>Middlename</p>
+        <input type="text" name="middlename" placeholder="middlename" />
+        <p>Lastname</p>
+        <input type="text" name="lastname"  placeholder="lastname"> 
+        <p>Gender</p>
+        <!--Using radio button-->
+        <table>
+        <tr>
+        <td><input type="radio" name="gender" value="Male"/>Male</td>  
+ 
+        <td><input type="radio" name="gender" value="Female"/>Female</td></tr>  
+        </table>
+            <p>Country code </p>
+        <input type="text" name="countryCode" placeholder="+91">
+        <p>Phone</p>
+        <input type="text" name="phone" placeholder="Phone number"> 
+        <p>Address</p>
+       <input type="text" name="address" placeholder="Full address">
+            <p> Email</p>
+        
+        <input type="email" name="email" placeholder="Email">
+            <p>Password:</p>
+        <input type="Password" name="pass" placeholder="Enter password"> 
+  
+            <p>Re-type password:</p>
+        
+  
+        <input type="Password" name="repass" placeholder="conform password">  <br>
+        <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+        <input type="submit" value="register">
+        </div>
+            </form> 
+    </center>
+        
+        
+    </body>
+</html>
